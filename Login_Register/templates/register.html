@@ -1,0 +1,24 @@
+<form method="POST" action="/login/"> {% csrf_token %}
+
+    <h3>Registration</h3>
+    <table>
+    <tr>
+      <th>Username :</th>
+      <th><input type="text" placeholder="Username" value-={{ form.username }} </input></th>
+    </tr>
+    <tr>
+      <th>PhoneNumber :</th>
+      <th><input type="text" placeholder="PhoneNumber" value-={{ form.phonenumber }}</th>
+    </tr>
+    <tr>
+      <th>Password :</th>
+      <th><input type="text" placeholder="Password" value-={{ form.password }}</th>
+    </tr>
+    <tr>
+      <th>Password :</th>
+      <th><input type="text" placeholder="confirm password" value-={{ form.password1 }}</th>
+    </tr>
+    </table>
+    <button type="submit" >Sign Up</button>
+
+</form>
